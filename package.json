@@ -1,5 +1,5 @@
 {
-  "name": "dsh-qq-group-digest",
+  "name": "dsh-qq-radar",
   "version": "0.1.0",
   "description": "QQ group chat digests for DeepSeek Harness: pull NapCat/OneBot messages, summarize each group into a Chinese HTML/Markdown report with an opportunity radar, and push a Feishu card.",
   "license": "MIT",
@@ -33,11 +33,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/clair0314/dsh-qq-group-digest.git"
+    "url": "git+https://github.com/clair0314/dsh-qq-radar.git"
   },
-  "homepage": "https://github.com/clair0314/dsh-qq-group-digest",
+  "homepage": "https://github.com/clair0314/dsh-qq-radar",
   "bugs": {
-    "url": "https://github.com/clair0314/dsh-qq-group-digest/issues"
+    "url": "https://github.com/clair0314/dsh-qq-radar/issues"
   },
   "engines": {
     "node": ">=18"

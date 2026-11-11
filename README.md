@@ -15,7 +15,7 @@
 **作为 DSH 插件（推荐）**——一条命令装进 DeepSeek Harness，技能名仍是 `qq-digest`：
 
 ```bash
-dsh plugin add github:clair0314/dsh-qq-group-digest
+dsh plugin add github:clair0314/dsh-qq-radar
 ```
 
 插件自带 Python CLI，本机需要 Python 3.9+（无第三方依赖）。装好后直接对 agent 说“总结一下群里今天聊了什么”。
@@ -23,8 +23,8 @@ dsh plugin add github:clair0314/dsh-qq-group-digest
 **从源码**：
 
 ```bash
-git clone https://github.com/clair0314/dsh-qq-group-digest.git
-cd dsh-qq-group-digest
+git clone https://github.com/clair0314/dsh-qq-radar.git
+cd dsh-qq-radar
 ./bin/qq-digest init          # 生成 ~/.qq-digest/config.json
 open examples/demo.html       # 先看看成品长什么样
 ```
