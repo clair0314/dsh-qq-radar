@@ -1,0 +1,50 @@
+{
+  "name": "dsh-qq-group-digest",
+  "version": "0.1.0",
+  "description": "QQ group chat digests for DeepSeek Harness: pull NapCat/OneBot messages, summarize each group into a Chinese HTML/Markdown report with an opportunity radar, and push a Feishu card.",
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "app",
+    "bin",
+    "SKILL.md",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "qq",
+    "qq-group",
+    "group-chat",
+    "digest",
+    "summary",
+    "onebot",
+    "napcat",
+    "feishu"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clair0314/dsh-qq-group-digest.git"
+  },
+  "homepage": "https://github.com/clair0314/dsh-qq-group-digest",
+  "bugs": {
+    "url": "https://github.com/clair0314/dsh-qq-group-digest/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

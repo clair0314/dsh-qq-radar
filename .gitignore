@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.DS_Store
+reports/
+*.db
+*.db-wal
+*.db-shm
+node_modules/
+
+# real chat screenshots stay local
+examples/real-*.png

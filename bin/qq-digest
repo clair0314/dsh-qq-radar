@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# qq-digest launcher — works from the skill folder or a checkout.
+set -euo pipefail
+
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+export PYTHONPATH="$ROOT/app${PYTHONPATH:+:$PYTHONPATH}"
+export PYTHONPYCACHEPREFIX="${PYTHONPYCACHEPREFIX:-${TMPDIR:-/tmp}/qq-digest-pyc}"
+
+PY="${QQDIGEST_PYTHON:-python3}"
+if ! command -v "$PY" >/dev/null 2>&1; then
+  echo "qq-digest: 找不到 python3，请先安装 Python 3.9+" >&2
+  exit 127
+fi
+
+exec "$PY" -m qqdigest "$@"

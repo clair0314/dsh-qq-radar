@@ -1,0 +1,5 @@
+# Bundle layer: DSH loads this when the plugin is enabled.
+# The plugin registers the `qq-digest` skill; the Python CLI ships in the same package.
+- insert:
+    - id: dsh-qq-group-digest
+      name: 'dsh-qq-group-digest'
