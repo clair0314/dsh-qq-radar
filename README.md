@@ -1,6 +1,6 @@
 # qq-digest · QQ 群聊日报
 
-> 🐧 **AI 学习群：1132348296**（在 QQ 里搜群号就能加）— 群聊日报怎么做、QQ 机器人怎么接，群里都有人踩过坑。
+> 🐧 **AI 学习群 1132348296** · niko 在这儿，插件我写、方向我找、坑我踩。 群聊日报怎么做、QQ 机器人怎么接，群里都有人踩过坑。
 
 ![群聊日报演示：一句话拉 24 小时，出中文日报](docs/demo.gif)
 
@@ -27,7 +27,7 @@
 **作为 DSH 插件（推荐）**——一条命令装进 DeepSeek Harness，技能名仍是 `qq-digest`：
 
 ```bash
-dsh plugin add github:clair0314/dsh-qq-radar
+dsh plugin add github:nekonya77/dsh-qq-radar
 ```
 
 插件自带 Python CLI，本机需要 Python 3.9+（无第三方依赖）。装好后直接对 agent 说“总结一下群里今天聊了什么”。
@@ -35,7 +35,7 @@ dsh plugin add github:clair0314/dsh-qq-radar
 **从源码**：
 
 ```bash
-git clone https://github.com/clair0314/dsh-qq-radar.git
+git clone https://github.com/nekonya77/dsh-qq-radar.git
 cd dsh-qq-radar
 ./bin/qq-digest init          # 生成 ~/.qq-digest/config.json
 open examples/demo.html       # 先看看成品长什么样
